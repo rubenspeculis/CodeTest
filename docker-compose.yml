@@ -1,0 +1,8 @@
+version: '3'
+services:
+  codetest:
+    build:
+      context: Docker/.
+    env_file: .env
+    volumes:
+    - ./:/home
